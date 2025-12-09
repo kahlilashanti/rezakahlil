@@ -100,6 +100,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .nav-cta:hover {
@@ -640,6 +642,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .contact-submit:hover {
