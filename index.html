@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Altitude — Digital Twins for $1,500 | Affordable 3D Property Records</title>
+    <meta name="title" content="Altitude — Digital Twins for $1,500 | Affordable 3D Property Records">
+    <meta name="description"
+        content="Professional digital twin capture for commercial and luxury properties. Persistent 3D spatial records from $1,500. Insurance, construction, facilities, and sales in one asset.">
+    <meta name="keywords"
+        content="digital twin, 3D property scan, gaussian splatting, commercial real estate, property documentation, spatial records, drone capture, BIM alternative, photogrammetry affordable">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://altitudevancouver.com/">
+    <meta property="og:title" content="Altitude — Digital Twins Finally Affordable">
+    <meta property="og:description"
+        content="Capture spatial state once. Use it for sales, insurance, renovations, facilities, and construction. From $1,500 per property.">
+    <meta property="og:image" content="https://altitudevancouver.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://altitudevancouver.com/">
+    <meta property="twitter:title" content="Altitude — Digital Twins Finally Affordable">
+    <meta property="twitter:description"
+        content="Persistent 3D property records from $1,500. Not marketing—infrastructure.">
+    <meta property="twitter:image" content="https://altitudevancouver.com/twitter-image.jpg">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Altitude Digital Twin Services",
+      "description": "Affordable digital twin capture for commercial and luxury real estate properties",
+      "provider": {
+        "@type": "Organization",
+        "name": "Altitude",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Vancouver",
+          "addressRegion": "BC",
+          "addressCountry": "CA"
+        }
+      },
+      "areaServed": "Canada",
+      "offers": {
+        "@type": "Offer",
+        "priceRange": "$1500-$5000"
+      }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="logo">ALTITUDE</div>
+        <div class="nav-links">
+            <a href="#use-cases" class="nav-link">Use Cases</a>
+            <a href="#team" class="nav-link">Team</a>
+            <button class="nav-cta"
+                onclick="document.querySelector('.footer-cta').scrollIntoView({behavior: 'smooth'})">
+                Get Started
+            </button>
+        </div>
+    </nav>
+
+    <!-- Video Hero Section -->
+    <section class="video-hero">
+        <!-- Replace this video src with your actual MP4 file -->
+        <video class="video-background" autoplay muted loop playsinline>
+            <source src="hero-video.mp4" type="video/mp4">
+            <!-- Fallback gradient background if video doesn't load -->
+        </video>
+        <div class="video-overlay"></div>
+
+        <div class="video-hero-content">
+            <h1 class="video-hero-title">
+                Digital Properties<br>
+                You Can <span class="accent-gold">Walk Through.</span>
+            </h1>
+            <p class="hero-tagline">Step inside. From anywhere.</p>
+            <p class="video-hero-subtitle">
+                Interactive 3D drone captures. Buyers navigate every angle—no downloads,
+                no goggles, just a web link. Captured once, explored infinitely.
+            </p>
+            <div class="hero-cta-group">
+                <button class="cta-primary" onclick="openDemo()">Try It Yourself</button>
+                <a href="#use-cases" class="cta-secondary">Explore Use Cases</a>
+                <a href="https://calendly.com/kahlilashanti" target="_blank" class="cta-primary">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">Scroll to Explore</div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="problem-section">
+        <div class="problem-content">
+            <div class="section-label">The Problem</div>
+            <h2 class="problem-title">
+                Professional photogrammetry costs<br>$10K–$50K per property
+            </h2>
+            <p class="problem-description">
+                Lidar scanning runs $15K–$100K. BIM modeling? $50K–$500K for commercial buildings.
+                The spatial record every property needs has been priced out of reach—until now.
+            </p>
+
+            <div class="comparison-grid">
+                <div class="comparison-item old">
+                    <div class="comparison-label">Traditional</div>
+                    <h3 class="comparison-title">Photogrammetry</h3>
+                    <div class="comparison-price">$10K+</div>
+                    <ul class="comparison-features">
+                        <li>• Weeks of turnaround</li>
+                        <li>• Specialized equipment</li>
+                        <li>• Expert operators required</li>
+                        <li>• Updates cost the same</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-item">
+                    <div class="comparison-label">Altitude</div>
+                    <h3 class="comparison-title">Digital Twins</h3>
+                    <div class="comparison-price">$1,500</div>
+                    <ul class="comparison-features">
+                        <li>• 24-hour turnaround</li>
+                        <li>• Standard drone capture</li>
+                        <li>• Automated processing</li>
+                        <li>• Quarterly updates $500</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases-section" id="use-cases">
+        <div class="use-cases-header">
+            <div class="section-label" style="color: var(--color-accent);">Not Just Sales</div>
+            <h2 class="use-cases-title">One Asset, Six Revenue Streams</h2>
+            <p class="use-cases-subtitle">
+                This isn't a video that plays once. It's a navigable spatial database you reuse across your entire
+                property lifecycle.
+            </p>
+        </div>
+
+        <div class="use-cases-grid">
+            <div class="use-case-card">
+                <div class="use-case-icon">🏢</div>
+                <h3 class="use-case-title">Real Estate Sales</h3>
+                <p class="use-case-description">
+                    Close commercial and luxury deals faster with immersive property tours.
+                    International buyers tour remotely before traveling.
+                </p>
+                <div class="use-case-price">From $1,500 initial capture</div>
+            </div>
+
+            <div class="use-case-card">
+                <div class="use-case-icon">📋</div>
+                <h3 class="use-case-title">Insurance Documentation</h3>
+                <p class="use-case-description">
+                    Prove property condition before and after claims.
+                    Spatial record timestamps protect against disputes.
+                </p>
+                <div class="use-case-price">$500 quarterly updates</div>
+            </div>
+
+            <div class="use-case-card">
+                <div class="use-case-icon">🏗️</div>
+                <h3 class="use-case-title">Construction Progress</h3>
+                <p class="use-case-description">
+                    Weekly or monthly captures track build timeline.
+                    Visual record for stakeholders and contractors.
+                </p>
+                <div class="use-case-price">Volume pricing available</div>
+            </div>
+
+            <div class="use-case-card">
+                <div class="use-case-icon">🔧</div>
+                <h3 class="use-case-title">Property Management</h3>
+                <p class="use-case-description">
+                    Searchable spatial database for maintenance planning.
+                    Remote inspections reduce site visits.
+                </p>
+                <div class="use-case-price">Annual contracts from $3,500</div>
+            </div>
+
+            <div class="use-case-card">
+                <div class="use-case-icon">🏠</div>
+                <h3 class="use-case-title">Short-Term Rentals</h3>
+                <p class="use-case-description">
+                    Virtual tours for bookings plus damage documentation.
+                    Before/after captures protect security deposits.
+                </p>
+                <div class="use-case-price">$1,500 + $500 per turnover</div>
+            </div>
+
+            <div class="use-case-card">
+                <div class="use-case-icon">📐</div>
+                <h3 class="use-case-title">Facilities Management</h3>
+                <p class="use-case-description">
+                    As-built documentation for architects and engineers.
+                    Measure and reference without return site visits.
+                </p>
+                <div class="use-case-price">Enterprise contracts available</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Props -->
+    <section class="value-section">
+        <div class="value-grid">
+            <div class="value-item">
+                <div class="value-number">01</div>
+                <h3 class="value-title">Asset, Not Marketing</h3>
+                <p class="value-description">
+                    This isn't a video that plays once. It's a navigable spatial database you can reuse
+                    for staging, damage claims, contractor bids, and remote inspections. Own your property's digital
+                    history.
+                </p>
+            </div>
+            <div class="value-item">
+                <div class="value-number">02</div>
+                <h3 class="value-title">Update Economics</h3>
+                <p class="value-description">
+                    Properties change. Your digital twin should too. Quarterly updates for $500 let you
+                    track renovations, seasonal condition, and compliance over time. SaaS economics for physical assets.
+                </p>
+            </div>
+            <div class="value-item">
+                <div class="value-number">03</div>
+                <h3 class="value-title">10x Cheaper</h3>
+                <p class="value-description">
+                    Professional photogrammetry costs $10K-50K. Lidar scanning costs $15K-100K.
+                    We deliver comparable spatial accuracy at a fraction of the cost through automated processing.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="team-header">
+            <div class="section-label">The Team</div>
+            <h2 class="team-title">Built by Operators</h2>
+            <p class="team-subtitle">
+                Real estate expertise meets technical execution
+            </p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="reza.jpeg" alt="Reza Sabour" class="team-photo">
+                <h3 class="team-name">Reza Sabour</h3>
+                <div class="team-role">Commercial Real Estate</div>
+                <p class="team-bio">
+                    Mortgage broker and commercial real estate specialist with deep connections across
+                    Vancouver's development community. Brings enterprise relationships and market knowledge
+                    from luxury residential to multi-million dollar commercial projects.
+                </p>
+                <a href="https://www.sabourmortgages.com/" target="_blank" class="team-link">
+                    sabourmortgages.com →
+                </a>
+            </div>
+
+            <div class="team-member">
+                <img src="kahlil.jpeg" alt="Kahlil Ashanti" class="team-photo">
+                <h3 class="team-name">Kahlil Ashanti</h3>
+                <div class="team-role">Technical & Operations</div>
+                <p class="team-bio">
+                    Founder & CEO of Mantis XR, spatial commerce infrastructure company serving NBA,
+                    New Balance, Arsenal FC. U.S. Air Force veteran and self-taught full-stack developer.
+                    Brings technical execution and enterprise product development experience.
+                </p>
+                <a href="https://www.kahlilashanti.com/" target="_blank" class="team-link">
+                    kahlilashanti.com →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="footer-cta">
+        <h2 class="footer-cta-title">
+            Every property deserves<br>a digital twin
+        </h2>
+        <p class="footer-cta-subtitle">
+            Start with one property. Scale to your entire portfolio. Get a custom quote in 24 hours.
+        </p>
+        <form class="contact-form"
+            onsubmit="alert('Thanks! We\'ll respond within 24 hours with a custom quote and timeline.'); return false;">
+            <input type="email" class="contact-input" placeholder="your@email.com" required>
+            <button type="submit" class="contact-submit">
+                Get Quote
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Altitude. Digital Twin Infrastructure. Vancouver, BC.</p>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-container">
+            <button class="demo-close" onclick="closeDemo()">×</button>
+            <iframe class="demo-iframe"
+                src="https://lumalabs.ai/embed/14e3a9f3-21f7-433a-bc3c-f5e275aafe50?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false"
+                title="Interactive 3D Property Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <div class="demo-toast" id="demoToast">⟲ Drag to Navigate • Scroll to Zoom</div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
