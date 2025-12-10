@@ -989,3 +989,21 @@ body {
         padding-bottom: 0;
     }
 }
+
+/* ============================================
+   DESKTOP LAYOUT FIXES
+   ============================================ */
+@media (min-width: 769px) {
+    /* Fix header overlap - add aggressive top padding to hero content on desktop */
+    .video-hero-content {
+        padding-top: 12rem;
+    }
+
+    /* Improve scroll indicator positioning on desktop */
+    .scroll-indicator {
+        bottom: 2.5rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        opacity: 0.9;
+    }
+}
