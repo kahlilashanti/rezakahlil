@@ -1,3 +1,4 @@
+<!-- Last updated: 12/11/25 - Investor feedback integration (Farhad + commercial property manager) -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +64,17 @@
 
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Mobile responsive styles for "When This Makes Sense" section -->
+    <style>
+        @media (max-width: 768px) {
+            /* When This Makes Sense section - mobile responsive */
+            .use-cases-section div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -141,7 +153,8 @@
                         <li>• 48-hour turnaround</li>
                         <li>• Standard drone capture</li>
                         <li>• Automated processing</li>
-                        <li>• Quarterly updates $500</li>
+                        <!-- Removed quarterly pricing per investor feedback - positioned as optional not required -->
+                        <li>• Optional maintenance plans</li>
                     </ul>
                 </div>
             </div>
@@ -158,6 +171,33 @@
                 property lifecycle.
             </p>
         </div>
+
+        <!-- When This Makes Sense section - added per Farhad feedback 12/11/25 -->
+        <div style="max-width: 1000px; margin: 3rem auto 5rem; padding: 0 2rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                <!-- Ideal Use Cases -->
+                <div>
+                    <h3 style="color: var(--color-accent); font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 1.5rem;">When This Makes Sense</h3>
+                    <ul style="list-style: none; color: rgba(250, 250, 250, 0.8); line-height: 2;">
+                        <li>✅ Luxury properties $3M+ (showcase exterior/grounds)</li>
+                        <li>✅ Construction progress (remote monitoring, no site visits)</li>
+                        <li>✅ Commercial portfolios (condition tracking over time)</li>
+                        <li>✅ Unique properties (waterfront, acreage, architectural)</li>
+                        <li>✅ International buyers (remote property exploration)</li>
+                    </ul>
+                </div>
+                <!-- When Not To Use -->
+                <div>
+                    <h3 style="color: rgba(250, 250, 250, 0.4); font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 1.5rem;">When This Doesn't</h3>
+                    <ul style="list-style: none; color: rgba(250, 250, 250, 0.5); line-height: 2;">
+                        <li>❌ Properties with exterior repairs needed</li>
+                        <li>❌ Basic single-family homes without unique features</li>
+                        <li>❌ Condos in dense buildings (limited exterior access)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End When This Makes Sense section -->
 
         <div class="use-cases-grid">
             <div class="use-case-card">
@@ -177,15 +217,16 @@
                     Prove property condition before and after claims.
                     Spatial record timestamps protect against disputes.
                 </p>
-                <div class="use-case-price">$500 quarterly updates</div>
+                <!-- Reframed as optional per investor feedback -->
+                <div class="use-case-price">Optional maintenance plans available</div>
             </div>
 
             <div class="use-case-card">
                 <div class="use-case-icon">🏗️</div>
                 <h3 class="use-case-title">Construction Progress</h3>
+                <!-- Enhanced per Farhad's tiny home use case feedback -->
                 <p class="use-case-description">
-                    Weekly or monthly captures track build timeline.
-                    Visual record for stakeholders and contractors.
+                    Weekly or monthly captures track build timeline. Perfect for remote project monitoring—track build progress without site visits. Visual record for stakeholders and contractors.
                 </p>
                 <div class="use-case-price">Volume pricing available</div>
             </div>
@@ -197,7 +238,8 @@
                     Searchable spatial database for maintenance planning.
                     Remote inspections reduce site visits.
                 </p>
-                <div class="use-case-price">Annual contracts from $3,500</div>
+                <!-- Changed to custom pricing per feedback - removes upsell feeling -->
+                <div class="use-case-price">Enterprise Solutions - Custom Pricing</div>
             </div>
 
             <div class="use-case-card">
@@ -219,6 +261,13 @@
                 </p>
                 <div class="use-case-price">Enterprise contracts available</div>
             </div>
+        </div>
+
+        <!-- Optional maintenance plan footnote - added 12/11/25 -->
+        <div style="max-width: 900px; margin: 2rem auto 0; text-align: center; padding: 0 2rem;">
+            <p style="color: rgba(250, 250, 250, 0.5); font-size: 0.9rem; line-height: 1.6; font-style: italic;">
+                *Annual maintenance plans ($1,500-$3,000) available for construction tracking, portfolio management, and ongoing documentation needs. Optional, not required.
+            </p>
         </div>
 
         <div style="max-width: 900px; margin: 4rem auto 0; text-align: center; padding: 0 2rem;">
@@ -246,8 +295,9 @@
             <div class="value-item">
                 <div class="value-number">02</div>
                 <h3 class="value-title">Update Economics</h3>
+                <!-- Updated per investor feedback - optional maintenance plans not mandatory quarterly -->
                 <p class="value-description">
-                    Properties change. Your digital twin should too. Quarterly updates for $500 let you
+                    Properties change. Your digital twin should too. Optional maintenance plans let you
                     track renovations, seasonal condition, and compliance over time. SaaS economics for physical assets.
                 </p>
             </div>

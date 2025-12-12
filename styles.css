@@ -120,7 +120,8 @@ body {
    ============================================ */
 .video-hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh; /* Changed from height to min-height - allows expansion */
+    height: auto; /* Allow it to expand for content */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,6 +212,9 @@ body {
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 3rem; /* Ensure space from text above */
+    position: relative;
+    z-index: 10;
 }
 
 .cta-primary {
@@ -266,6 +270,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     animation: bounce 2s infinite;
+    display: none; /* Hide by default on desktop */
 }
 
 @keyframes bounce {
@@ -888,6 +893,7 @@ body {
     }
 
     .scroll-indicator {
+        display: block; /* Show only on mobile */
         bottom: 2rem;
         font-size: 0.75rem;
     }
@@ -994,16 +1000,29 @@ body {
    DESKTOP LAYOUT FIXES
    ============================================ */
 @media (min-width: 769px) {
-    /* Fix header overlap - add aggressive top padding to hero content on desktop */
+    /* Fix header overlap - add padding to hero content on desktop */
     .video-hero-content {
         padding-top: 12rem;
+        padding-bottom: 8rem; /* Ensure buttons have space at bottom */
     }
 
-    /* Improve scroll indicator positioning on desktop */
-    .scroll-indicator {
-        bottom: 2.5rem;
-        font-size: 0.8rem;
-        font-weight: 500;
-        opacity: 0.9;
+    /* CRITICAL FIX: Ensure hero CTA buttons are visible on desktop */
+    .hero-cta-group {
+        display: flex !important;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        z-index: 10;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        opacity: 1;
+        visibility: visible;
+        display: inline-block;
     }
 }
