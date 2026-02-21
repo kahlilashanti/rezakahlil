@@ -29,3 +29,7 @@ build/
 # Logs
 *.log
 logs/
+
+# Internal documentation (contains sensitive business context)
+PROJECT_CONTEXT.md
+ALTITUDE_BEEDIE_CONTEXT_FEB2026.md
